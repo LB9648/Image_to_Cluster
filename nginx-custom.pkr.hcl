@@ -23,4 +23,8 @@ build {
     source      = "index.html"
     destination = "/usr/share/nginx/html/index.html"
   }
+  post-processor "docker-tag" {
+    repository = "my-custom-nginx"
+    tags       = ["v1"]
+  }
 }
