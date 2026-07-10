@@ -102,7 +102,7 @@ make all
 Une fois le déploiement terminé avec succès, lancez la règle dédiée pour exposer l'application sur le port réseau 9090 :
 
 ```bash
-make all
+make forward
 ```
 
 Dans la section Ports, aller sur le port 9090 et faire clic-droit -> visibilite du port -> Public
