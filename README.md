@@ -105,7 +105,7 @@ Une fois le déploiement terminé avec succès, lancez la règle dédiée pour e
 make forward
 ```
 
-Dans la section Ports, aller sur le port 9090 et faire clic-droit -> visibilite du port -> Public
+Dans la section Ports, aller sur le port 9090 et faire clic-droit -> Visibilité du port -> Public.
 
 Si vous souhaitez réinitialiser le cluster à son état d'origine en supprimant les pods, les services et l'image locale :
 
