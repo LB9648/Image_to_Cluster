@@ -79,6 +79,39 @@ Difficulté : Facile (~30 minutes)
 **Complétez et documentez ce fichier README.md** pour nous expliquer comment utiliser votre solution.  
 Faites preuve de pédagogie et soyez clair dans vos expliquations et processus de travail.  
    
+
+## 🛠️ Automatisation globale via Makefile
+
+Pour répondre aux exigences d'automatisation et garantir un déploiement reproductible sans erreur humaine, un **`Makefile`** a été développé. Il centralise l'orchestration de toutes les étapes.
+
+### Variables configurées :
+* `CLUSTER_NAME` : `lab` (détecté d'après l'architecture de nœuds `k3d-lab-server-0`)
+* `IMAGE_NAME` : `my-custom-nginx:v1`
+* `PORT` : `9090` (Port local d'exposition choisi)
+
+---
+
+## 🏃‍♂️ Guide de Démarrage Rapide
+
+### 1. Déploiement complet (de Zéro)
+Pour installer les dépendances, construire l'image, l'importer dans le cluster K3d et appliquer les playbooks Ansible, exécutez une seule commande dans votre terminal :
+
+```bash
+make all
+```
+Une fois le déploiement terminé avec succès, lancez la règle dédiée pour exposer l'application sur le port réseau 9090 :
+
+```bash
+make all
+```
+
+Dans la section Ports, aller sur le port 9090 et faire clic-droit -> visibilite du port -> Public
+
+Si vous souhaitez réinitialiser le cluster à son état d'origine en supprimant les pods, les services et l'image locale :
+
+```bash
+make clean
+```
 ---------------------------------------------------
 Evaluation
 ---------------------------------------------------
